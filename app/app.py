@@ -4,6 +4,7 @@ import streamlit as st
 # Configure page
 st.set_page_config(
     page_title="Diabetes Prediction System",
+    subheader="Welcome to Your Health Journey"
     page_icon="🩺",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -22,7 +23,7 @@ def show_navigation():
     pages = {
         "🏠 Home": "Home",
         "📝 Patient Input": "Input",
-        "🔍 Prediction": "Prediction", 
+        "🔍 Risk Assessment": "Risk Assessment", 
         "📊 Analytics": "Analytics",
         "📋 History": "History",
         "ℹ️ About": "About"
@@ -37,11 +38,11 @@ def show_navigation():
 # Page functions (skeleton versions)
 def show_home():
     """Home page skeleton"""
-    st.title("🩺 Diabetes Prediction System")
+    st.title("🩺 Diabetes Risk Prediction System")
     st.markdown("### Welcome to the AI-Powered Diabetes Risk Assessment Tool")
     
     # Placeholder content
-    st.info("🏠 **HOME PAGE** - Add your welcome content here")
+    st.info("🏠 **HOME PAGE** - This tool helps you understand your risk of developing type 2 diabetes. It's not a diagnosis, but it can guide you towards healthier choices.")
     
     col1, col2, col3 = st.columns(3)
     with col1:
